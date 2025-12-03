@@ -1,0 +1,140 @@
+/*google font imported, text-align and letter-spacing used*/
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+@font-face {
+    font-family: 'vintage';
+    src: url('font/StardosStencil-Regular.ttf') format('truetype');
+}
+/*line-height used*/
+body {
+    background-color: hsla(220, 98%, 95%, 0.8);
+    line-height: 1.6;
+    padding: 20px;
+}
+/*hexadecimal and text-transform used*/
+h1 {
+    margin-bottom: 15px;
+    font-family: audiowide, sans-serif;
+    color: #110160;
+    text-transform: uppercase;
+}
+nav {
+    font-family: audiowide, sans-serif;
+    margin-bottom: 10px;
+}
+/*rgba used*/
+h2 {
+    padding-top: 15px;
+    margin-bottom: 10px;
+    font-family: audiowide, sans-serif;
+    color: rgba(17, 1, 96, 0.8);
+    line-height: 1.4;
+}
+/*named color used*/
+#welcome {
+    font-family: audiowide, sans-serif;
+    font-size: 1.2rem;
+    color: bluegrey;
+    padding-top: 20px;
+    margin-bottom: 25px;
+}
+/*rgb used*/
+.quotes {
+    font-size: 1.5rem;
+    font-family: 'vintage', sans-serif;
+    color: rgb(195, 79, 172);
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+#gallery {
+    font-family: audiowide, sans-serif;
+    font-size: 1.2rem;
+    color: bluegrey;
+    margin-bottom: 25px;
+}
+/*hsl used*/
+#credits {
+    font-family: audiowide, sans-serif;
+    font-size: 1rem;
+    color: hsl(220, 75%, 43%);
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+footer {
+    font-family: audiowide, sans-serif;
+    font-size: 0.7rem;
+    color: hsl(220, 98%, 20%);
+    margin-top: 30px;
+}
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+#nature {
+    border: 3px solid hsl(120, 100%, 25%);
+    border-radius: 10px;
+}
+/*Display inline-block used*/
+img[src*="nature"]{
+    width: 20%;
+    height: 150px;
+    display:inline-block;
+    padding-bottom: 10px;
+}
+#city {
+    margin-top: 40px;
+    border: 3px solid hsl(353, 100%, 25%);
+    border-radius: 10px;
+    max-height: 230px;
+    border-radius: 10px;
+    overflow: scroll;
+    padding-bottom: 20px;
+}    
+img[src*="city"]{
+    display:inline-block;
+    max-height: 150px;
+}
+#more {
+    font-family: audiowide, sans-serif;
+    font-size: 1rem;
+    color: bluegrey;
+    padding-top: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#more p {
+    color: hsl(280, 81%, 25%);
+    font-size: 20px;
+}
+img[src*="street"]{
+    text-align: center;
+    max-height: 150px;
+    border-radius: 10px;
+    border:#110160 solid 3px;
+    margin-bottom: 10px;
+}
+.static,.relative,.absolute,.sticky,.fixed {
+    display: block;
+    border-radius: 5px;
+    background-color: hsla(220, 98%, 95%, 0.5);
+}
+/*positioning used*/
+.static {position:static; left: 20px;} 
+.relative {position:relative; left: 10px;} 
+.absolute {position:absolute; top: 820px; right: 300px; z-index: 2;} 
+.sticky {position:sticky; top: 300px; left: 300px; z-index: 1;}
+.fixed {
+    position:fixed; 
+    bottom: 0; 
+    text-align: center; 
+    width: 100%; 
+    padding: 10px; 
+    background-color: hsla(220, 98%, 95%, 0.5);
+}
+.inline {display:inline-block;}
+ 
