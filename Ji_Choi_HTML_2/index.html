@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mom's kitchen job application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0ece2;
+        }
+
+        .application-form {
+            background-color: #def1b8;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<header>
+    <h1>Mom's kitchen: Job application</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="application.html">Application Form</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="welcome">
+        <h2>Welcome to Mom's Kitchen Job Application Portal</h2>
+        <p>We are excited that you are interested in joining our team! At Mom's Kitchen, we value dedication,
+            passion for food, and a friendly attitude. Please navigate to the Application Form to submit your
+            details.</p>
+    </section>
+    <br>
+    <article id="open_jobs">
+        <h2>Current Open Positions</h2>
+        <ul>
+            <li>Line Cook</li>
+            <li>Server</li>
+            <li>Dishwasher</li>
+            <li>Cashier</li>
+        </ul>
+    </article>
+    <br>
+    <section id="company_intro">
+        <h2>Why Work at Mom's Kitchen?</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xPPLbEFbCAo?si=OEQAmANl9-Yodo_n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>Your browser does not support the video</iframe>
+    </section>
+    <br>
+    <section id="application" class="application-form">
+        <h2>Application Form</h2>
+        <p>Ready to apply? Please fill out our application form and take the
+            first step towards joining our team!</p>
+        <blockquote>We look forward to reviewing your application and potentially welcoming you to Mom's Kitchen!
+        </blockquote>
+        <!--Application Form starts here-->
+        <form action="/submit" method="post" autocomplete="on">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required minlength="1"
+                maxlength="30"><br><br>
+            <label for="email">Email Adress</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" required minlength="8" pattern="[a-zA-Z0-9]+"><br><br>
+            <label for="experience">Years of experience</label>
+            <input type="number" id="experience" name="experience" min="0" max="30"><br><br>
+            <label for="salary">Expected salary</label>
+            <input type="range" id="salary" name="salary" value="2000" min="800" max="4000" step="50"><br><br>
+            <p>Choose your skills</p>
+            <label for="Customer_management">customer management</label>
+            <input type="checkbox" id="Customer_management" name="skills" value="customer management">
+            <label for="cooking">cooking</label>
+            <input type="checkbox" id="cooking" name="skills" value="cooking">
+            <label for="cleaning">cleaning</label>
+            <input type="checkbox" id="cleaning" name="skills" value="cleaning"><br><br>
+            <p>Select your work type</p>
+            <label for="full_time">Full Time</label>
+            <input type="radio" id="full_time" name="work_type" value="Full time">
+            <label for="part_time">Part Time</label>
+            <input type="radio" id="part_time" name="work_type" value="Part time"><br><br>
+            <label for="position">What position are you applying for</label>
+            <select id="position" name="position">
+                <option value="line cook">Line Cook</option>
+                <option value="server">Server</option>
+                <option value="dishwasher">Dishwasher</option>
+                <option value="cashier">Cashier</option>
+            </select><br><br>
+            <label for="city">which city do you want to work</label>
+            <input type="text" list="cities" id="city" name="city">
+            <datalist id="cities">
+                <option value="New York">
+                <option value="Los Angeles">
+                <option value="Chicago">
+                <option value="Houston">
+                <option value="Miami">
+            </datalist>
+            <label for="coverletter">Cover Letter</label>
+            <textarea id="coverletter" placeholder="Please describe why you want to work for Mom's kitchen"
+                name="coverletter" rows="10" cols="50"></textarea><br><br>
+            <label for="referalcode">Referal Code (Disabled)</label>
+            <input type="text" id="referalcode" value="3264" disabled><br><br>
+            <label for="applicationid">Application ID (Readonly)</label>
+            <input type="text" id="applicationid" value="MK1423" readonly><br><br>
+            <input type="submit" value="Submit Application" aria-label="Submit your application">
+
+        </form>
+
+
+    </section>
+    <img src="kitchen.jpg" alt="Mom's Kitchen">
+</main>
+<footer>
+    <nav>
+        <a href="#welcome">Go to Welcome</a>
+    </nav>
+    <!-- PDF embeded in the footer -->
+    <embed src="https://gdpr.eu/wp-content/uploads/2019/01/Our-Company-Privacy-Policy.pdf" type="application/pdf"
+        width="300" height="200">
+    <p>&copy; 2024 Mom's Kitchen. All rights reserved.</p>
+</footer>
+
+
+</html>
